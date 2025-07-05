@@ -1,0 +1,17 @@
+{
+  "name": "mongobd-adapter",
+  "version": "1.0.0",
+  "description": "'adaptive mongo db setup for nodejs'",
+  "license": "ISC",
+  "author": "MG SHABALALA",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1"
+  }
+}
