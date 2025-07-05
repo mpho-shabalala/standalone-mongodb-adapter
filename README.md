@@ -1,0 +1,1 @@
+"# standalone-mongodb-adapter" 
