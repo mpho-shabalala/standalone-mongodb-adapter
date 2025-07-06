@@ -10,7 +10,7 @@ const connectDB = async (uri) => {
     });
 
      // Step 2: Log success
-    console.log('✅ MongoDB Connected');
+    console.log(' MongoDB Connected');
     process.on('SIGINT', async () => {
         await mongoose.disconnect();
         console.log('📴 MongoDB disconnected (SIGINT)');
@@ -20,12 +20,12 @@ const connectDB = async (uri) => {
     // Step 3: Handle shutdowns
     process.on('SIGTERM', async () => {
         await mongoose.disconnect();
-        console.log('📴 MongoDB disconnected (SIGTERM)');
+        console.log(' MongoDB disconnected (SIGTERM)');
         process.exit(0);
     });
 
   } catch (error) {
-    console.error('❌ MongoDB connection error:', error.message);
+    console.error(' MongoDB connection error:', error.message);
     process.exit(1);
   }
 };
