@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema({
   role: {
     type: String,
     default: 'user',
-    enum: ['user', 'admin', 'barber'], // Optional: restrict roles
+    enum: ['user', 'admin'], // Optional: restrict roles
   },
   contacts: {
     type: String,
@@ -35,7 +35,6 @@ const userSchema = new mongoose.Schema({
   }
 });
 
-require('../utils/hooks')(userSchema);
-require('../utils/modelMethods')(userSchema);
+require('../dbUtils/hooks')(userSchema);
 
 module.exports = mongoose.model('User', userSchema);
