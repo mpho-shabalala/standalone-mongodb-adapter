@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const connectDB = require('./config/db');
-const loadModels = require('./utils/loadModels')
+const loadModels = require('./loadModels')
 const app = require('./app');
 
 
